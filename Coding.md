@@ -314,6 +314,40 @@ class X
 
 3. Develop a "FileCompressor" class with overloaded `Compress()` methods that handle text, images, and videos differently.
 
+```
+
+
+class FileCompressor
+{
+    public  void Compress(string text)
+    {
+        Console.WriteLine($"text.....: {text}");
+    }
+    public  void Compress(byte[] imageFile)
+    {
+        Console.WriteLine("Compressing image........");
+    }
+
+    public  void Compress(byte[] video, int n)
+    {
+        Console.WriteLine("Compressing video...");
+    }
+}
+
+
+
+
+class X
+{
+    static void Main(string[] args)
+    {
+        FileCompressor cc = new FileCompressor();
+        cc.Compress("this is text");
+        cc.Compress(new byte[] { 0x1, 0x2, 0x3 });
+        cc.Compress(new byte[] { 0x4, 0x5, 0x6 }, 5);
+    }
+}
+```
 
 4. Design an "AIModel" class with multiple versions (BasicAI, NeuralNet, DeepLearning) that override a `TrainModel()` method for different complexity levels.
 
