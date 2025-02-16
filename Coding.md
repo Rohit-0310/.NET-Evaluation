@@ -351,6 +351,52 @@ class X
 
 4. Design an "AIModel" class with multiple versions (BasicAI, NeuralNet, DeepLearning) that override a `TrainModel()` method for different complexity levels.
 
+```
+
+abstract class AIModel
+{
+    public abstract void TrainModel();
+}
+
+
+class BasicAI : AIModel
+{
+    public override void TrainModel()
+    {
+        Console.WriteLine("THis is basic AI model...");
+    }
+}
+
+class NeuralNet : AIModel
+{
+    public override void TrainModel()
+    {
+        Console.WriteLine("This is NeuralNet.AI model..");
+    }
+}
+class DeepLearning : AIModel
+{
+    public override void TrainModel()
+    {
+        Console.WriteLine("Tihs is DeepLearning AI model...");
+    }
+}
+
+
+class X
+{
+    static void Main(string[] args)
+    {
+        AIModel bm = new BasicAI();
+        bm.TrainModel();
+        AIModel nt = new NeuralNet();
+        nt.TrainModel();
+        AIModel dl = new DeepLearning();
+        dl.TrainModel();
+
+    }
+}
+```
 
 5. Create a "GamePhysicsEngine" base class with different implementations for 2D and 3D games using runtime polymorphism.
 
