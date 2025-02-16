@@ -263,6 +263,54 @@ class Program
 
 2. Implement a "DatabaseConnector" base class with different derived classes for SQL, MongoDB, and Firebase that override a `Connect()` method.
 
+```
+
+
+
+abstract class DatabaseConnector
+{
+    public abstract void Connect();
+}
+
+
+class SQL : DatabaseConnector
+{
+    public override void Connect()
+    {
+        Console.WriteLine("Connecting to SQL Server...");
+    }
+}
+
+class MongoDB : DatabaseConnector
+{
+    public override void Connect()
+    {
+        Console.WriteLine("Connecting to MongoDB Database...");
+    }
+}
+class Firebase : DatabaseConnector
+{
+    public override void Connect()
+    {
+        Console.WriteLine("Connecting to FireBase Database...");
+    }
+}
+
+
+class X
+{
+    static void Main(string[] args)
+    {
+        DatabaseConnector sql = new SQL();
+        sql.Connect();
+        DatabaseConnector mongo = new MongoDB();
+        mongo.Connect();
+        DatabaseConnector firebase = new Firebase();
+        firebase.Connect();
+
+    }
+}
+```
 
 3. Develop a "FileCompressor" class with overloaded `Compress()` methods that handle text, images, and videos differently.
 
