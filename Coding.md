@@ -1,7 +1,7 @@
 ### **Arrays**
 
 1. Implement a method to find the subarray with the maximum sum (Kadane’s Algorithm) in a given integer array.
-```
+```C#
 using System;
 
 class Program
@@ -33,7 +33,7 @@ class Program
 ```
 
 2. Write a program to find the intersection and union of two unsorted arrays without using built-in functions.
-```
+```C#
 using System;
 
 class Program
@@ -125,7 +125,7 @@ class Program
 4. Write a method to find the first missing positive integer in an unsorted array (without sorting).
 
 
-```
+```C#
 using System;
 
 class Program
@@ -166,7 +166,7 @@ class Program
 
 
 
-```
+```C#
 using System;
 
 class Program
@@ -263,7 +263,7 @@ class Program
 
 2. Implement a "DatabaseConnector" base class with different derived classes for SQL, MongoDB, and Firebase that override a `Connect()` method.
 
-```
+```C#
 
 
 
@@ -314,7 +314,7 @@ class X
 
 3. Develop a "FileCompressor" class with overloaded `Compress()` methods that handle text, images, and videos differently.
 
-```
+```C#
 
 
 class FileCompressor
@@ -351,7 +351,7 @@ class X
 
 4. Design an "AIModel" class with multiple versions (BasicAI, NeuralNet, DeepLearning) that override a `TrainModel()` method for different complexity levels.
 
-```
+```C#
 
 abstract class AIModel
 {
@@ -406,7 +406,7 @@ class X
 
 1. Implement a "MultiLevelBankingSystem" where "CentralBank" is the parent class, "NationalBank" is the child, and "LocalBank" is a subclass of "NationalBank". Override an `InterestRate()` method at each level.
 
-```
+```C#
 
 
 
@@ -452,7 +452,7 @@ class X
 
 2. Develop a "SmartVehicle" inheritance hierarchy where a "Vehicle" class has electric and gas-powered subclasses, and further derived classes like "SelfDrivingCar" and "HybridCar". Implement an overridden `Drive()` method in each.
 
-```
+```C#
 
 
 
@@ -517,7 +517,7 @@ class X
 
 3. Create an "EmployeeHierarchy" where "Employee" is the base class, inherited by "Manager" and "Director". Implement a `CalculateBonus()` method differently for each.
 
-```
+```C#
 
 
 
